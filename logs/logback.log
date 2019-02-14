@@ -1,0 +1,175 @@
+2019-01-23 17:48:26.148 logback [main] INFO  c.e.d.DemoswaggerApplication - Starting DemoswaggerApplication on DESKTOP-UQ7FIHQ with PID 19636 (D:\gongzuoxiangmu\swaggerDemo\target\classes started by TUSHIXIAN in D:\gongzuoxiangmu\swaggerDemo)
+2019-01-23 17:48:26.158 logback [main] INFO  c.e.d.DemoswaggerApplication - No active profile set, falling back to default profiles: default
+2019-01-23 17:48:28.376 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$7954b734] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 17:48:29.020 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8111 (http)
+2019-01-23 17:48:29.043 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8111"]
+2019-01-23 17:48:29.064 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-01-23 17:48:29.064 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-23 17:48:29.080 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\jdk8.0\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\jdk8.0\bin;D:\svn\bin;D:\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;D:\Git\cmd;D:\mysql\mysql-8.0.13-winx64\mysql-8.0.13-winx64\bin;D:\erlong\erl10.2\bin;C:\Users\TUSHIXIAN\AppData\Local\Microsoft\WindowsApps;;.]
+2019-01-23 17:48:29.345 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-01-23 17:48:29.346 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3031 ms
+2019-01-23 17:48:30.250 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-01-23 17:48:30.461 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-23 17:48:31.010 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2019-01-23 17:48:31.084 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-01-23 17:48:31.328 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2019-01-23 17:48:31.823 logback [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: localhost:5672
+2019-01-23 17:48:32.021 logback [main] INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: connectionFactory#6d33a66e:0/SimpleConnection@45c80312 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 52708]
+2019-01-23 17:48:32.184 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8111"]
+2019-01-23 17:48:32.199 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-01-23 17:48:32.242 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8111 (http) with context path ''
+2019-01-23 17:48:32.247 logback [main] INFO  c.e.d.DemoswaggerApplication - Started DemoswaggerApplication in 7.151 seconds (JVM running for 10.54)
+2019-01-23 17:49:31.327 logback [http-nio-8111-exec-7] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-23 17:49:31.327 logback [http-nio-8111-exec-7] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-01-23 17:49:31.340 logback [http-nio-8111-exec-7] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2019-01-23 17:50:02.488 logback [Thread-20] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+2019-01-23 17:50:03.248 logback [Thread-20] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2019-01-23 17:50:03.249 logback [Thread-20] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+2019-01-23 17:50:03.263 logback [Thread-20] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2019-01-23 17:50:03.267 logback [Thread-20] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2019-01-23 17:50:03.268 logback [Thread-20] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2019-01-23 17:50:03.269 logback [Thread-20] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-23 17:50:11.239 logback [main] INFO  c.e.d.DemoswaggerApplication - Starting DemoswaggerApplication on DESKTOP-UQ7FIHQ with PID 7400 (D:\gongzuoxiangmu\swaggerDemo\target\classes started by TUSHIXIAN in D:\gongzuoxiangmu\swaggerDemo)
+2019-01-23 17:50:11.245 logback [main] INFO  c.e.d.DemoswaggerApplication - No active profile set, falling back to default profiles: default
+2019-01-23 17:50:13.060 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$c43a3f83] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 17:50:13.608 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8111 (http)
+2019-01-23 17:50:13.627 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8111"]
+2019-01-23 17:50:13.646 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-01-23 17:50:13.647 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-23 17:50:13.659 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\jdk8.0\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\jdk8.0\bin;D:\svn\bin;D:\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;D:\Git\cmd;D:\mysql\mysql-8.0.13-winx64\mysql-8.0.13-winx64\bin;D:\erlong\erl10.2\bin;C:\Users\TUSHIXIAN\AppData\Local\Microsoft\WindowsApps;;.]
+2019-01-23 17:50:13.836 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-01-23 17:50:13.836 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2473 ms
+2019-01-23 17:50:14.510 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-01-23 17:50:14.693 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-23 17:50:15.188 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2019-01-23 17:50:15.214 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-01-23 17:50:15.266 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2019-01-23 17:50:15.428 logback [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: localhost:5672
+2019-01-23 17:50:15.492 logback [main] INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: connectionFactory#7cf78c85:0/SimpleConnection@7eb27768 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 50228]
+2019-01-23 17:50:15.593 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8111"]
+2019-01-23 17:50:15.608 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-01-23 17:50:15.638 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8111 (http) with context path ''
+2019-01-23 17:50:15.645 logback [main] INFO  c.e.d.DemoswaggerApplication - Started DemoswaggerApplication in 5.444 seconds (JVM running for 8.056)
+2019-01-23 17:50:23.277 logback [http-nio-8111-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-23 17:50:23.277 logback [http-nio-8111-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-01-23 17:50:23.290 logback [http-nio-8111-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2019-01-23 17:51:30.225 logback [Thread-15] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+2019-01-23 17:51:30.637 logback [Thread-15] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2019-01-23 17:51:30.639 logback [Thread-15] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+2019-01-23 17:51:31.637 logback [Thread-15] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2019-01-23 17:51:31.644 logback [Thread-15] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2019-01-23 17:51:31.645 logback [Thread-15] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2019-01-23 17:51:31.648 logback [Thread-15] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-23 17:51:39.604 logback [main] INFO  c.e.d.DemoswaggerApplication - Starting DemoswaggerApplication on DESKTOP-UQ7FIHQ with PID 10480 (D:\gongzuoxiangmu\swaggerDemo\target\classes started by TUSHIXIAN in D:\gongzuoxiangmu\swaggerDemo)
+2019-01-23 17:51:39.613 logback [main] INFO  c.e.d.DemoswaggerApplication - No active profile set, falling back to default profiles: default
+2019-01-23 17:51:42.289 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$a3434475] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 17:51:42.831 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8111 (http)
+2019-01-23 17:51:42.849 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8111"]
+2019-01-23 17:51:42.862 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-01-23 17:51:42.862 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-23 17:51:42.873 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\jdk8.0\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\jdk8.0\bin;D:\svn\bin;D:\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;D:\Git\cmd;D:\mysql\mysql-8.0.13-winx64\mysql-8.0.13-winx64\bin;D:\erlong\erl10.2\bin;C:\Users\TUSHIXIAN\AppData\Local\Microsoft\WindowsApps;;.]
+2019-01-23 17:51:43.061 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-01-23 17:51:43.062 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3314 ms
+2019-01-23 17:51:43.782 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-01-23 17:51:43.968 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-23 17:51:44.436 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2019-01-23 17:51:44.461 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-01-23 17:51:44.517 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2019-01-23 17:51:44.662 logback [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: localhost:5672
+2019-01-23 17:51:44.723 logback [main] INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: connectionFactory#3458eca5:0/SimpleConnection@46a8c2b4 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 50419]
+2019-01-23 17:51:44.828 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8111"]
+2019-01-23 17:51:44.844 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-01-23 17:51:44.883 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8111 (http) with context path ''
+2019-01-23 17:51:44.889 logback [main] INFO  c.e.d.DemoswaggerApplication - Started DemoswaggerApplication in 6.578 seconds (JVM running for 8.902)
+2019-01-23 17:51:50.715 logback [http-nio-8111-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-23 17:51:50.715 logback [http-nio-8111-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-01-23 17:51:50.729 logback [http-nio-8111-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+2019-01-23 17:53:10.810 logback [Thread-17] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+2019-01-23 17:53:11.003 logback [Thread-17] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2019-01-23 17:53:11.006 logback [Thread-17] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+2019-01-23 17:53:11.996 logback [Thread-17] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2019-01-23 17:53:12.006 logback [Thread-17] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2019-01-23 17:53:12.006 logback [Thread-17] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2019-01-23 17:53:12.009 logback [Thread-17] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-23 17:53:19.697 logback [main] INFO  c.e.d.DemoswaggerApplication - Starting DemoswaggerApplication on DESKTOP-UQ7FIHQ with PID 4916 (D:\gongzuoxiangmu\swaggerDemo\target\classes started by TUSHIXIAN in D:\gongzuoxiangmu\swaggerDemo)
+2019-01-23 17:53:19.702 logback [main] INFO  c.e.d.DemoswaggerApplication - No active profile set, falling back to default profiles: default
+2019-01-23 17:53:20.941 logback [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'requestFilter' defined in class path resource [com/example/demoswagger/config/ServletConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=servletConfig; factoryMethodName=requestFilter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/example/demoswagger/config/ServletConfig.class]] for bean 'requestFilter': There is already [Generic bean: class [com.example.demoswagger.filterHandler.RequestFilter]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\gongzuoxiangmu\swaggerDemo\target\classes\com\example\demoswagger\filterHandler\RequestFilter.class]] bound.
+2019-01-23 17:53:20.953 logback [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-01-23 17:53:20.956 logback [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'requestFilter', defined in class path resource [com/example/demoswagger/config/ServletConfig.class], could not be registered. A bean with that name has already been defined in file [D:\gongzuoxiangmu\swaggerDemo\target\classes\com\example\demoswagger\filterHandler\RequestFilter.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2019-01-23 17:54:13.038 logback [main] INFO  c.e.d.DemoswaggerApplication - Starting DemoswaggerApplication on DESKTOP-UQ7FIHQ with PID 13992 (D:\gongzuoxiangmu\swaggerDemo\target\classes started by TUSHIXIAN in D:\gongzuoxiangmu\swaggerDemo)
+2019-01-23 17:54:13.048 logback [main] INFO  c.e.d.DemoswaggerApplication - No active profile set, falling back to default profiles: default
+2019-01-23 17:54:14.855 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$93430eda] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 17:54:15.410 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8111 (http)
+2019-01-23 17:54:15.429 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8111"]
+2019-01-23 17:54:15.449 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-01-23 17:54:15.449 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-23 17:54:15.465 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\jdk8.0\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\jdk8.0\bin;D:\svn\bin;D:\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;D:\Git\cmd;D:\mysql\mysql-8.0.13-winx64\mysql-8.0.13-winx64\bin;D:\erlong\erl10.2\bin;C:\Users\TUSHIXIAN\AppData\Local\Microsoft\WindowsApps;;.]
+2019-01-23 17:54:15.661 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-01-23 17:54:15.661 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2489 ms
+2019-01-23 17:54:16.362 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-01-23 17:54:16.536 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-23 17:54:17.042 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2019-01-23 17:54:17.069 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-01-23 17:54:17.121 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2019-01-23 17:54:17.273 logback [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: localhost:5672
+2019-01-23 17:54:17.332 logback [main] INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: connectionFactory#4aa11206:0/SimpleConnection@69a5c6be [delegate=amqp://guest@127.0.0.1:5672/, localPort= 50718]
+2019-01-23 17:54:17.432 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8111"]
+2019-01-23 17:54:17.446 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-01-23 17:54:17.480 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8111 (http) with context path ''
+2019-01-23 17:54:17.487 logback [main] INFO  c.e.d.DemoswaggerApplication - Started DemoswaggerApplication in 5.569 seconds (JVM running for 8.194)
+2019-01-23 17:54:22.986 logback [http-nio-8111-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-23 17:54:22.986 logback [http-nio-8111-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-01-23 17:54:23.002 logback [http-nio-8111-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+2019-01-23 17:56:17.090 logback [Thread-15] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+2019-01-23 17:56:17.742 logback [Thread-15] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2019-01-23 17:56:17.744 logback [Thread-15] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+2019-01-23 17:56:18.739 logback [Thread-15] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2019-01-23 17:56:18.747 logback [Thread-15] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2019-01-23 17:56:18.748 logback [Thread-15] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2019-01-23 17:56:18.751 logback [Thread-15] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-23 17:56:26.805 logback [main] INFO  c.e.d.DemoswaggerApplication - Starting DemoswaggerApplication on DESKTOP-UQ7FIHQ with PID 18892 (D:\gongzuoxiangmu\swaggerDemo\target\classes started by TUSHIXIAN in D:\gongzuoxiangmu\swaggerDemo)
+2019-01-23 17:56:26.815 logback [main] INFO  c.e.d.DemoswaggerApplication - No active profile set, falling back to default profiles: default
+2019-01-23 17:56:28.752 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$ef527626] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 17:56:29.324 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8111 (http)
+2019-01-23 17:56:29.341 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8111"]
+2019-01-23 17:56:29.355 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-01-23 17:56:29.355 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-23 17:56:29.367 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\jdk8.0\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\jdk8.0\bin;D:\svn\bin;D:\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;D:\Git\cmd;D:\mysql\mysql-8.0.13-winx64\mysql-8.0.13-winx64\bin;D:\erlong\erl10.2\bin;C:\Users\TUSHIXIAN\AppData\Local\Microsoft\WindowsApps;;.]
+2019-01-23 17:56:29.582 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-01-23 17:56:29.583 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2604 ms
+2019-01-23 17:56:30.285 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-01-23 17:56:30.457 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-23 17:56:30.946 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2019-01-23 17:56:30.971 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-01-23 17:56:31.024 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2019-01-23 17:56:31.191 logback [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: localhost:5672
+2019-01-23 17:56:31.250 logback [main] INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: connectionFactory#49a6f486:0/SimpleConnection@2ee4706d [delegate=amqp://guest@127.0.0.1:5672/, localPort= 50977]
+2019-01-23 17:56:31.351 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8111"]
+2019-01-23 17:56:31.367 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-01-23 17:56:31.421 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8111 (http) with context path ''
+2019-01-23 17:56:31.433 logback [main] INFO  c.e.d.DemoswaggerApplication - Started DemoswaggerApplication in 5.889 seconds (JVM running for 8.369)
+2019-01-23 17:56:35.806 logback [http-nio-8111-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-23 17:56:35.807 logback [http-nio-8111-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-01-23 17:56:35.819 logback [http-nio-8111-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2019-01-23 18:05:58.257 logback [Thread-16] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+2019-01-23 18:05:58.722 logback [Thread-16] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2019-01-23 18:05:58.724 logback [Thread-16] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+2019-01-23 18:05:59.719 logback [Thread-16] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2019-01-23 18:05:59.726 logback [Thread-16] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2019-01-23 18:05:59.727 logback [Thread-16] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2019-01-23 18:05:59.729 logback [Thread-16] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

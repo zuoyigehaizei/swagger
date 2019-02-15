@@ -25,7 +25,7 @@ public class AopAspect {
     //环绕
 //    @Around(value = "execution(* com.example.demoswagger.controller.AspectController.*(..))")
     @Around("annotionTest()")
-    public void huanraoAop(ProceedingJoinPoint pjp) throws Throwable {
+    public Object huanraoAop(ProceedingJoinPoint pjp) throws Throwable {
         System.out.println("aop方法执行");
         MethodSignature methodSignature = (MethodSignature) pjp.getSignature();
         Method method = methodSignature.getMethod();
@@ -33,6 +33,6 @@ public class AopAspect {
         MyAnnotation annotation = method.getAnnotation(MyAnnotation.class);
         System.out.println("方法规则拦截" + method.getName());
         //aop拦截放行
-        pjp.proceed();
+        return pjp.proceed();
     }
 }

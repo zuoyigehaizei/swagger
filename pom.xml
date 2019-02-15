@@ -79,6 +79,12 @@
             <!--<artifactId> spring-boot-devtools </ artifactId>-->
             <!--<optional> true </optional>-->
         <!--</ dependency>-->
+        <!--aop依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>

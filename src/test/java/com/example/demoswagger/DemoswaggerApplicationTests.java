@@ -1,5 +1,9 @@
 package com.example.demoswagger;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
+import com.example.demoswagger.model.BTrainsetDict;
 import com.google.common.util.concurrent.Callables;
 import org.apache.catalina.Executor;
 import org.junit.Test;
@@ -13,10 +17,7 @@ import java.sql.Time;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.IntSummaryStatistics;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Predicate;
@@ -144,6 +145,39 @@ public class DemoswaggerApplicationTests {
         System.out.println("lsdkfjlsdfj");
     }
 
+
+    @Test
+    public void aaaaa() {
+        BTrainsetDict ming = new BTrainsetDict(11, "xiaoming", "男");
+        BTrainsetDict hua = new BTrainsetDict(22, "xiaohua", "女");
+        List<BTrainsetDict> bTrainsetDicts = new ArrayList<>();
+        bTrainsetDicts.add(ming);
+        bTrainsetDicts.add(hua);
+        //获取数据条数 :total
+        int total = bTrainsetDicts.size();
+        //数据库数据转json   :date
+        String s = JSON.toJSONString(bTrainsetDicts);
+        String s1 = JSONArray.toJSONString(bTrainsetDicts);
+        //获取表数据行的字段数   :fieldNum
+        int length = BTrainsetDict.class.getDeclaredFields().length;
+
+        //外层封装的大map
+        Map<String, String> dataMap = new HashMap<>();
+        dataMap.put("total", String.valueOf(total));
+        dataMap.put("fieldNum", String.valueOf(length));
+        dataMap.put("data", s);
+
+
+        //大map装换成  jsonObject类型
+        String jsonStr = JSON.toJSONString(dataMap);
+        JSONObject jsonObject = JSON.parseObject(jsonStr);
+
+    }
+
+    static class test01{
+        //静态内部类，可以用于单例模式
+    }
+
 }
 
 
@@ -171,5 +205,6 @@ class MyRunnable implements Callable {
         System.out.println("我是线程" + Thread.currentThread().getName());
         return "w shi xiancheng:" + Thread.currentThread().getName();
     }
+
 }
 

@@ -22,7 +22,7 @@ public class AopAspect {
     public void annotionTest() {
     }
 
-    //环绕
+    //环绕:可自定义需要执行的方法是否执行  而前置通知后后置通知方法一定会执行
 //    @Around(value = "execution(* com.example.demoswagger.controller.AspectController.*(..))")
     @Around("annotionTest()")
     public Object huanraoAop(ProceedingJoinPoint pjp) throws Throwable {
@@ -32,7 +32,7 @@ public class AopAspect {
         //获取方法上注解
         MyAnnotation annotation = method.getAnnotation(MyAnnotation.class);
         System.out.println("方法规则拦截" + method.getName());
-        //aop拦截放行
+        //aop拦截放行，执行方法
         return pjp.proceed();
     }
 }

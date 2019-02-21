@@ -14,7 +14,7 @@ public class MyResourceServerConfigurer extends ResourceServerConfigurerAdapter 
 
     @Override
     public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
-        resources.resourceId("orders").stateless(true);
+        resources.resourceId("abc").stateless(true);
     }
 
     @Override
@@ -27,6 +27,6 @@ public class MyResourceServerConfigurer extends ResourceServerConfigurerAdapter 
                 .anonymous()
                 .and()
                 .authorizeRequests()
-                .antMatchers("/orders/**").authenticated();//配置order访问控制，必须认证过后才可以访问
+                .antMatchers("/abc/**").authenticated();//配置order访问控制，必须认证过后才可以访问
     }
 }

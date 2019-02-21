@@ -45,14 +45,14 @@ public class MyAuthorizationServerConfigurer extends AuthorizationServerConfigur
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.inMemory().withClient("client_1")
                 //client
-                .resourceIds("orders")
+                .resourceIds("abc")
                 .authorizedGrantTypes("client_credentials","refresh_token")
                 .scopes("select")
                 .authorities("client")
                 .secret("123456")
                 //password
                 .and().withClient("client_2")
-                .resourceIds("orders")
+                .resourceIds("abc")
                 .authorizedGrantTypes("password", "refresh_token")
                 .scopes("select")
                 .authorities("client")
@@ -107,7 +107,6 @@ public class MyAuthorizationServerConfigurer extends AuthorizationServerConfigur
          *   `token_id` varchar(256) DEFAULT NULL,
          *   `token` blob,
          *   `authentication` blob
-         * ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-         */
+         * ) ENGINE=MyISAM DEFAULT CHARSET=utf8;*/
     }
 }

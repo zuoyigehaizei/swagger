@@ -1,0 +1,23 @@
+server:
+  port: 8111
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    publisher-confirms: true
+    publisher-returns: true
+  application:
+    name: rabbitmq-hello-receiving
+  #设置security的密码用户名
+  security:
+    user:
+      name: user_1
+      password: 123456
+#配置数据库连接
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/db01?useSSL=false&serverTimezone=GMT&characterEncoding=utf8
+    username: root
+    password: root
+    driverClassName: com.mysql.cj.jdbc.Driver

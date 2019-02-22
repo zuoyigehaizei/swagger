@@ -3,7 +3,8 @@ package com.example.demoswagger.config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.annotation.Version;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -17,9 +18,13 @@ import org.springframework.security.oauth2.provider.token.DefaultTokenServices;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.JdbcTokenStore;
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
-import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
+import org.springframework.security.oauth2.provider.token.store.KeyStoreKeyFactory;
 
 import javax.sql.DataSource;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 //认证服务器，用来认证用户分发token,并存储
 @Configuration
@@ -117,7 +122,7 @@ public class MyAuthorizationServerConfigurer extends AuthorizationServerConfigur
 
     //jwt 对称加密
     //jwt转换器
-    @Bean
+//    @Bean
     public JwtAccessTokenConverter accessTokenConverter() {
         JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
         //加密秘钥
@@ -125,5 +130,32 @@ public class MyAuthorizationServerConfigurer extends AuthorizationServerConfigur
         return converter;
     }
 
-    //jwt JwtTokenStore
+    //jwt 非对称加密  没搞定
+//    @Bean
+//    public JwtAccessTokenConverter accessTokenConverter() {
+//        //私钥
+//        JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
+//        KeyStoreKeyFactory keyStoreKeyFactory = new KeyStoreKeyFactory(new ClassPathResource("server.keystore"),"87654321".toCharArray());
+//        converter.setKeyPair(keyStoreKeyFactory.getKeyPair("server"));
+//        //公钥
+//        Resource resource = new ClassPathResource("public.txt");
+//        String publicKey = null;
+//        try {
+//            publicKey = inputStream2String(resource.getInputStream());
+//        } catch (final IOException e) {
+//            throw new RuntimeException(e);
+//        }
+//        converter.setVerifierKey(publicKey);
+//        return converter;
+//    }
+//
+//        String inputStream2String(InputStream is) throws IOException {
+//        BufferedReader in = new BufferedReader(new InputStreamReader(is));
+//        StringBuffer buffer = new StringBuffer();
+//        String line = "";
+//        while ((line = in.readLine()) != null) {
+//            buffer.append(line);
+//        }
+//        return buffer.toString();
+//    }
 }

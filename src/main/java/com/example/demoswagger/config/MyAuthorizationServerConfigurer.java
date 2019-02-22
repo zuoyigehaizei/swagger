@@ -3,6 +3,7 @@ package com.example.demoswagger.config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.annotation.Version;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -15,6 +16,8 @@ import org.springframework.security.oauth2.provider.token.AuthorizationServerTok
 import org.springframework.security.oauth2.provider.token.DefaultTokenServices;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.JdbcTokenStore;
+import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
+import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 
 import javax.sql.DataSource;
 
@@ -87,6 +90,8 @@ public class MyAuthorizationServerConfigurer extends AuthorizationServerConfigur
 //                .authenticationManager(authenticationManager);
         //数据库存储
         endpoints.tokenStore(tokenStore())
+                //token转换，使用jwt
+                .accessTokenConverter(accessTokenConverter())
                 .authenticationManager(authenticationManager)
                 .allowedTokenEndpointRequestMethods(HttpMethod.GET, HttpMethod.GET);
         //以下为数据库存储token的表结构
@@ -109,4 +114,16 @@ public class MyAuthorizationServerConfigurer extends AuthorizationServerConfigur
          *   `authentication` blob
          * ) ENGINE=MyISAM DEFAULT CHARSET=utf8;*/
     }
+
+    //jwt 对称加密
+    //jwt转换器
+    @Bean
+    public JwtAccessTokenConverter accessTokenConverter() {
+        JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
+        //加密秘钥
+        converter.setSigningKey("123");
+        return converter;
+    }
+
+    //jwt JwtTokenStore
 }

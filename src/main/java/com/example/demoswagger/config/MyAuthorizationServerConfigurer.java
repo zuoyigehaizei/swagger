@@ -54,7 +54,7 @@ public class MyAuthorizationServerConfigurer extends AuthorizationServerConfigur
         clients.inMemory().withClient("client_1")
                 //client
                 .resourceIds("abc")
-                .authorizedGrantTypes("client_credentials","refresh_token")
+                .authorizedGrantTypes("client_credentials", "refresh_token")
                 .scopes("select")
                 .authorities("client")
                 .secret("123456")
@@ -123,39 +123,40 @@ public class MyAuthorizationServerConfigurer extends AuthorizationServerConfigur
     //jwt 对称加密
     //jwt转换器
 //    @Bean
+//    public JwtAccessTokenConverter accessTokenConverter() {
+//        JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
+//        //加密秘钥
+//        converter.setSigningKey("123");
+//        return converter;
+//    }
+
+    //jwt 非对称加密  没搞定
+    @Bean
     public JwtAccessTokenConverter accessTokenConverter() {
+        //私钥
         JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
-        //加密秘钥
-        converter.setSigningKey("123");
+        KeyStoreKeyFactory keyStoreKeyFactory = new KeyStoreKeyFactory(new ClassPathResource("ims.abc.com_keystore.jks"), "mypassword".toCharArray());
+        //此处传入的是创建jks文件时的别名-alias ims.abc.com
+        converter.setKeyPair(keyStoreKeyFactory.getKeyPair("ims.abc.com"));
+        //公钥（读取public.txt的公钥信息）
+        Resource resource = new ClassPathResource("public.txt");
+        String publicKey = null;
+        try {
+            publicKey = inputStream2String(resource.getInputStream());
+        } catch (final IOException e) {
+            throw new RuntimeException(e);
+        }
+        converter.setVerifierKey(publicKey);
         return converter;
     }
 
-    //jwt 非对称加密  没搞定
-//    @Bean
-//    public JwtAccessTokenConverter accessTokenConverter() {
-//        //私钥
-//        JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
-//        KeyStoreKeyFactory keyStoreKeyFactory = new KeyStoreKeyFactory(new ClassPathResource("server.keystore"),"87654321".toCharArray());
-//        converter.setKeyPair(keyStoreKeyFactory.getKeyPair("server"));
-//        //公钥
-//        Resource resource = new ClassPathResource("public.txt");
-//        String publicKey = null;
-//        try {
-//            publicKey = inputStream2String(resource.getInputStream());
-//        } catch (final IOException e) {
-//            throw new RuntimeException(e);
-//        }
-//        converter.setVerifierKey(publicKey);
-//        return converter;
-//    }
-//
-//        String inputStream2String(InputStream is) throws IOException {
-//        BufferedReader in = new BufferedReader(new InputStreamReader(is));
-//        StringBuffer buffer = new StringBuffer();
-//        String line = "";
-//        while ((line = in.readLine()) != null) {
-//            buffer.append(line);
-//        }
-//        return buffer.toString();
-//    }
+    String inputStream2String(InputStream is) throws IOException {
+        BufferedReader in = new BufferedReader(new InputStreamReader(is));
+        StringBuffer buffer = new StringBuffer();
+        String line = "";
+        while ((line = in.readLine()) != null) {
+            buffer.append(line);
+        }
+        return buffer.toString();
+    }
 }

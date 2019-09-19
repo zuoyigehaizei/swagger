@@ -23,17 +23,17 @@ public class DemoswaggerApplication {
     }
 
     //pageHelper分页配置
-    @Bean
-    public PageHelper getPageHelper(){
-        PageHelper pageHelper=new PageHelper();
-        Properties properties=new Properties();
-        properties.setProperty("helperDialect","mysql");
-        properties.setProperty("reasonable","true");
-        properties.setProperty("supportMethodsArguments","true");
-        properties.setProperty("params","count=countSql");
-        pageHelper.setProperties(properties);
-        return pageHelper;
-    }
+//    @Bean
+//    public PageHelper getPageHelper(){
+//        PageHelper pageHelper=new PageHelper();
+//        Properties properties=new Properties();
+//        properties.setProperty("helperDialect","mysql");
+//        properties.setProperty("reasonable","true");
+//        properties.setProperty("supportMethodsArguments","true");
+//        properties.setProperty("params","count=countSql");
+//        pageHelper.setProperties(properties);
+//        return pageHelper;
+//    }
 
 }
 
